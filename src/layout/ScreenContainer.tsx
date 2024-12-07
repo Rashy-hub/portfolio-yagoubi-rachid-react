@@ -1,4 +1,3 @@
-import React from 'react'
 /*    text-align: center;
     justify-content: center;
     align-items: center;
