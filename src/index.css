@@ -1,0 +1,46 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* For body text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); /* For headings */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&display=swap'); /* For large headings */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar__item {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fbbf24; /* Tailwind yellow-500 */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar__item:hover::after {
+    width: 100%;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-cursor {
+    display: inline-block;
+    width: 1px; /* Largeur du curseur */
+    height: 24px; /* Hauteur du curseur */
+    background-color: black; /* Couleur du curseur */
+    animation: blink 0.75s step-end infinite; /* Animation de clignotement */
+}
