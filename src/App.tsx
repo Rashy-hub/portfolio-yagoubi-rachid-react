@@ -12,6 +12,7 @@ import Main from './layout/Main'
 import Section from './layout/Section'
 import BeautifulLink from './components/BeautifulLink'
 import SectionTitle from './components/SectionTitle'
+import HomeContainer from './containers/HomeContainer'
 
 function App() {
     return (
@@ -19,9 +20,13 @@ function App() {
             <Header />
             <Main>
                 <Section name="home">
-                    <CtaButton />
-                    <Avatar />
-                    <HomeContent />
+                    <HomeContainer>
+                        <CtaButton />
+                        <div className="flex lg:flex-row flex-col items-center justify-center">
+                            <Avatar />
+                            <HomeContent />
+                        </div>
+                    </HomeContainer>
                 </Section>
                 <Section name="skills">
                     <SkillsContainer />

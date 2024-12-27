@@ -42,7 +42,7 @@ const HomeContent = () => {
     }, [isComplete, index])
 
     return (
-        <div className="relative md:w-full md:h-full md:col-start-7 md:row-start-4 md:col-span-6 md:row-span-4">
+        <div className="relative w-[600px]  ">
             <motion.div
                 className="  font-title"
                 initial={{ opacity: 0, y: 20 }} // Start animation with fade and slight downward offset
@@ -50,7 +50,7 @@ const HomeContent = () => {
                 transition={{ duration: 1, ease: 'easeOut' }} // Smooth ease-out animation
             >
                 <motion.h1
-                    className="text-4xl font-bold text-neutral-200"
+                    className="text-4xl font-bold text-neutral-200 w-fit"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2, duration: 0.8 }}
@@ -85,7 +85,7 @@ const HomeContent = () => {
                 </motion.h1>
 
                 <motion.p
-                    className="home__content--desc mt-6 text-2xl text-lime-200 max-w-[60%]"
+                    className="home__content--desc mt-6 text-2xl text-lime-200 max-w-[100%]"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 1 }}

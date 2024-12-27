@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const Avatar = () => {
     return (
-        <div className="relative md:w-full md:h-full  md:col-start-1 md:row-start-4 md:col-span-6 md:row-span-4">
+        <div className="relative w-[400px] h-[400px] ">
             <motion.div
                 className=" w-[400px] h-[400px] absolute right-0 "
                 initial={{ opacity: 0, scale: 0.9 }}
